@@ -6,7 +6,7 @@
   <title>Residential Asphalt Paving #2 - Parkway Paving LLC</title>
   <meta
     name="description"
-    content="Transform Your Property With Professional Asphalt Paving. Residential asphalt paving for driveways, walkways, patios, pool decks, porches, and more."
+    content="Transform Your Property With Professional Asphalt Paving. Residential asphalt paving for driveways, walkways, patios and more across New Jersey."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,34 +18,34 @@
 
   <style>
     :root{
-      --pk-bg:#f5f1e8;
-      --pk-cream:#f7f3eb;
-      --pk-cream2:#efe8dc;
-      --pk-card:#fbf8f3;
+      --pk-bg:#f4efe6;
+      --pk-cream:#f8f3ea;
+      --pk-cream2:#eee5d7;
+      --pk-surface:#fbf8f2;
       --pk-white:#ffffff;
       --pk-text:#181511;
-      --pk-muted:#6e655d;
-      --pk-line:#d9d0c3;
-      --pk-charcoal:#111111;
-      --pk-charcoal2:#171717;
-      --pk-charcoal3:#222222;
-      --pk-accent:#d6ef57;
-      --pk-accent-deep:#b8d63c;
-      --pk-shadow:0 20px 60px rgba(0,0,0,.08);
-      --pk-radius:24px;
+      --pk-muted:#6c655c;
+      --pk-line:#ddd3c7;
+      --pk-charcoal:#101010;
+      --pk-charcoal2:#161616;
+      --pk-charcoal3:#1f1f1f;
+      --pk-accent:#d7ef57;
+      --pk-accent-deep:#bfd944;
+      --pk-radius:28px;
+      --pk-radius-md:22px;
       --pk-radius-sm:16px;
+      --pk-shadow:0 20px 60px rgba(0,0,0,.08);
       --pk-max:1200px;
-      --pk-pad-x:clamp(18px,3vw,32px);
-      --pk-pad-y:clamp(64px,9vw,110px);
+      --pk-pad:clamp(68px,8vw,112px);
     }
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:'Inter',sans-serif;
-      color:var(--pk-text);
       background:var(--pk-bg);
+      color:var(--pk-text);
+      font-family:"Inter",sans-serif;
       line-height:1.6;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
@@ -54,6 +54,8 @@
     img,svg{display:block;max-width:100%}
     a{text-decoration:none;color:inherit}
     button,input,textarea{font:inherit}
+    ul{margin:0;padding:0}
+
     .sr-only{
       position:absolute;
       width:1px;height:1px;
@@ -67,8 +69,8 @@
       margin-inline:auto;
     }
 
-    .pk-pad{padding:var(--pk-pad-y) 0}
     .pk-sec{position:relative}
+    .pk-pad{padding:var(--pk-pad) 0}
     .pk-dark{color:#fff}
     .pk-dark p{color:rgba(255,255,255,.76)}
     .pk-dark .pk-eyebrow{color:rgba(255,255,255,.72)}
@@ -87,23 +89,23 @@
 
     h1,h2,h3{
       margin:0;
-      line-height:1.05;
+      line-height:1.04;
       letter-spacing:-.04em;
     }
 
     h1{
-      font-size:clamp(2.8rem,7vw,5.6rem);
+      font-size:clamp(2.8rem,7vw,5.7rem);
       font-weight:900;
     }
 
     h2{
       font-size:clamp(2rem,4vw,3.8rem);
       font-weight:800;
-      margin-bottom:16px;
+      margin-bottom:14px;
     }
 
     h3{
-      font-size:clamp(1.15rem,2vw,1.5rem);
+      font-size:clamp(1.15rem,2vw,1.48rem);
       font-weight:800;
       letter-spacing:-.03em;
       margin-bottom:10px;
@@ -111,45 +113,35 @@
 
     p{
       margin:0;
-      font-size:1rem;
       color:var(--pk-muted);
+      font-size:1rem;
     }
 
-    .pk-head{
-      max-width:780px;
-    }
-
-    .pk-center{
-      margin-inline:auto;
-      text-align:center;
-    }
+    .pk-head{max-width:780px}
+    .pk-center{text-align:center;margin-inline:auto}
 
     .pk-btn{
       display:inline-flex;
       align-items:center;
       justify-content:center;
       gap:10px;
-      min-height:52px;
+      min-height:54px;
       padding:0 22px;
       border-radius:999px;
       font-weight:800;
       font-size:.96rem;
-      transition:.25s ease;
       border:1px solid transparent;
+      transition:.24s ease;
       cursor:pointer;
       white-space:nowrap;
     }
 
-    .pk-btn svg{
-      width:18px;
-      height:18px;
-      flex:0 0 18px;
-    }
+    .pk-btn svg{width:18px;height:18px;flex:0 0 18px}
 
     .pk-btn-primary{
       background:var(--pk-accent);
       color:#111;
-      box-shadow:0 12px 30px rgba(214,239,87,.25);
+      box-shadow:0 12px 30px rgba(215,239,87,.24);
     }
 
     .pk-btn-primary:hover{
@@ -158,9 +150,9 @@
     }
 
     .pk-btn-ghost{
-      background:transparent;
-      color:inherit;
       border-color:rgba(255,255,255,.22);
+      color:#fff;
+      background:transparent;
     }
 
     .pk-btn-ghost:hover{
@@ -168,9 +160,9 @@
     }
 
     .pk-btn-dark{
-      background:#121212;
+      background:#111;
       color:#fff;
-      border-color:#121212;
+      border-color:#111;
     }
 
     .pk-btn-dark:hover{
@@ -178,21 +170,19 @@
       transform:translateY(-1px);
     }
 
-    .pk-btn-block{
-      width:100%;
-    }
+    .pk-btn-block{width:100%}
 
     .pk-top{
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(10,10,10,.92);
+      background:rgba(12,12,12,.92);
       backdrop-filter:blur(10px);
       border-bottom:1px solid rgba(255,255,255,.08);
     }
 
     .pk-topbar{
-      min-height:82px;
+      min-height:84px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -200,11 +190,20 @@
     }
 
     .pk-logo{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
       color:#fff;
       font-weight:900;
-      font-size:1.08rem;
+      font-size:1.02rem;
       letter-spacing:-.03em;
       white-space:nowrap;
+    }
+
+    .pk-logo img{
+      width:52px;
+      height:auto;
+      object-fit:contain;
     }
 
     .pk-nav{
@@ -214,7 +213,8 @@
       flex-wrap:wrap;
     }
 
-    .pk-nav a{
+    .pk-nav a,
+    .pk-nav span{
       color:rgba(255,255,255,.8);
       font-size:.95rem;
       font-weight:600;
@@ -231,11 +231,11 @@
 
     .pk-hero{
       background:
-        radial-gradient(circle at 80% 15%, rgba(214,239,87,.14), transparent 20%),
-        radial-gradient(circle at 20% 30%, rgba(255,255,255,.06), transparent 22%),
-        linear-gradient(180deg,#121212 0%, #171717 100%);
+        radial-gradient(circle at 82% 14%, rgba(215,239,87,.12), transparent 20%),
+        radial-gradient(circle at 18% 30%, rgba(255,255,255,.06), transparent 22%),
+        linear-gradient(180deg,#111111 0%, #171717 100%);
       color:#fff;
-      padding:clamp(48px,7vw,82px) 0 clamp(54px,8vw,86px);
+      padding:clamp(52px,7vw,82px) 0 clamp(56px,8vw,88px);
     }
 
     .pk-hero-grid{
@@ -245,30 +245,26 @@
       align-items:end;
     }
 
-    .pk-hero p{
-      color:rgba(255,255,255,.78);
-    }
-
     .pk-lead{
       max-width:760px;
-      font-size:clamp(1.02rem,1.3vw,1.08rem);
       margin:22px 0 28px;
+      color:rgba(255,255,255,.78);
+      font-size:clamp(1.02rem,1.3vw,1.08rem);
     }
 
     .pk-hero-cta{
       display:flex;
       gap:14px;
       flex-wrap:wrap;
-      margin-bottom:26px;
+      margin-bottom:28px;
     }
 
     .pk-checks{
       list-style:none;
-      padding:0;
-      margin:0 0 28px;
       display:grid;
       grid-template-columns:repeat(3,minmax(0,1fr));
       gap:12px 18px;
+      margin:0 0 28px;
     }
 
     .pk-checks li{
@@ -298,8 +294,8 @@
       background:rgba(255,255,255,.04);
       border-radius:18px;
       padding:16px 18px;
-      font-weight:700;
       color:#fff;
+      font-weight:700;
     }
 
     .pk-panel{
@@ -314,7 +310,7 @@
     .pk-panel ul{
       margin:18px 0 0;
       padding-left:18px;
-      color:rgba(255,255,255,.85);
+      color:rgba(255,255,255,.86);
     }
 
     .pk-panel li+li{margin-top:10px}
@@ -328,7 +324,7 @@
     }
 
     .pk-card{
-      background:var(--pk-card);
+      background:var(--pk-surface);
       border:1px solid var(--pk-line);
       border-radius:24px;
       padding:28px 24px;
@@ -346,12 +342,12 @@
       align-items:center;
     }
 
-    .pk-bullets{
+    .pk-bullets,
+    .pk-trust-list{
       list-style:none;
-      padding:0;
-      margin:24px 0 0;
       display:grid;
       gap:12px;
+      margin:24px 0 0;
     }
 
     .pk-bullets li,
@@ -362,7 +358,8 @@
     }
 
     .pk-bullets svg,
-    .pk-trust-list svg{
+    .pk-trust-list svg,
+    .pk-th svg{
       width:18px;
       height:18px;
       flex:0 0 18px;
@@ -396,7 +393,7 @@
 
     .pk-media-nj{
       background-image:
-        linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.18)),
+        linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.18)),
         url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80");
     }
 
@@ -451,11 +448,6 @@
     }
 
     .pk-trust-list{
-      list-style:none;
-      padding:0;
-      margin:24px 0 0;
-      display:grid;
-      gap:12px;
       color:rgba(255,255,255,.88);
       font-weight:600;
     }
@@ -474,7 +466,7 @@
       gap:8px;
       padding:9px 12px;
       border-radius:999px;
-      background:rgba(214,239,87,.12);
+      background:rgba(215,239,87,.12);
       color:var(--pk-accent);
       font-size:.84rem;
       font-weight:800;
@@ -497,18 +489,8 @@
       font-weight:600;
     }
 
-    .pk-th svg{
-      width:18px;
-      height:18px;
-      margin-top:3px;
-      color:var(--pk-accent);
-      flex:0 0 18px;
-    }
-
     .pk-formwrap{
       margin-top:34px;
-      display:grid;
-      grid-template-columns:minmax(0,1fr);
     }
 
     .pk-formcard{
@@ -519,13 +501,8 @@
       padding:26px;
     }
 
-    .pk-formhd{
-      margin-bottom:18px;
-    }
-
-    .pk-formhd p{
-      margin-top:8px;
-    }
+    .pk-formhd{margin-bottom:18px}
+    .pk-formhd p{margin-top:8px}
 
     .pk-ghl-form-embed{
       border-radius:18px;
@@ -588,8 +565,8 @@
     }
 
     .pk-qa-q[aria-expanded="true"] .pk-pm::after{
-      transform:translate(-50%,-50%) rotate(0);
       opacity:0;
+      transform:translate(-50%,-50%) rotate(0deg);
     }
 
     .pk-qa-a{
@@ -604,7 +581,7 @@
 
     .pk-final{
       background:
-        radial-gradient(circle at 50% 0%, rgba(214,239,87,.12), transparent 26%),
+        radial-gradient(circle at 50% 0%, rgba(215,239,87,.12), transparent 26%),
         linear-gradient(180deg,#171717 0%, #111111 100%);
       text-align:center;
       color:#fff;
@@ -626,7 +603,7 @@
 
     .pk-final-phone{
       margin-top:18px;
-      color:rgba(255,255,255,.82)!important;
+      color:rgba(255,255,255,.84)!important;
     }
 
     .pk-final-phone a{
@@ -655,7 +632,6 @@
 
     .pk-footer-links{
       list-style:none;
-      padding:0;
       margin:14px 0 0;
       display:grid;
       gap:10px;
@@ -709,8 +685,8 @@
       .pk-topbar{
         min-height:auto;
         padding:14px 0;
-        align-items:flex-start;
         flex-direction:column;
+        align-items:flex-start;
       }
 
       .pk-nav,
@@ -718,14 +694,8 @@
         width:100%;
       }
 
-      .pk-nav{
-        gap:14px;
-      }
-
-      .pk-top-cta .pk-btn{
-        width:100%;
-      }
-
+      .pk-nav{gap:14px}
+      .pk-top-cta .pk-btn{width:100%}
       .pk-hero-tags,
       .pk-services,
       .pk-adv-grid,
@@ -742,25 +712,11 @@
         padding:22px;
       }
 
-      .pk-media{
-        min-height:320px;
-      }
-
-      .pk-final-cta{
-        flex-direction:column;
-      }
-
-      .pk-final-cta .pk-btn{
-        width:100%;
-      }
-
-      .pk-sticky{
-        display:flex;
-      }
-
-      body{
-        padding-bottom:92px;
-      }
+      .pk-media{min-height:320px}
+      .pk-final-cta{flex-direction:column}
+      .pk-final-cta .pk-btn{width:100%}
+      .pk-sticky{display:flex}
+      body{padding-bottom:92px}
     }
   </style>
 </head>
@@ -769,14 +725,17 @@
 
   <header class="pk-top">
     <div class="pk-in pk-topbar">
-      <a href="#" class="pk-logo">Parkway Paving LLC</a>
+      <a href="https://www.parkwaypaving.com/" class="pk-logo" target="_blank" rel="noopener noreferrer" aria-label="Parkway Paving LLC Home">
+        <img src="https://www.parkwaypaving.com/wp-content/uploads/2022/08/parkway-logo.png" alt="Parkway Paving LLC logo" />
+        <span>Parkway Paving LLC</span>
+      </a>
 
       <nav class="pk-nav" aria-label="Main navigation">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="https://www.parkwaypaving.com/" target="_blank" rel="noopener noreferrer">Home</a>
+        <a href="https://www.parkwaypaving.com/about-us/" target="_blank" rel="noopener noreferrer">About Us</a>
+        <span>Services</span>
+        <span>Blog</span>
+        <a href="https://www.parkwaypaving.com/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
       </nav>
 
       <div class="pk-top-cta">
@@ -788,7 +747,6 @@
 
   <main id="content">
     <div id="parkway-residential-page">
-      <!-- HERO -->
       <section class="pk-sec pk-hero" aria-label="Residential asphalt paving hero">
         <div class="pk-in pk-hero-grid">
           <div>
@@ -832,11 +790,10 @@
             <span class="pk-eyebrow">Why Asphalt</span>
             <h3>A Better Surface for Your Home</h3>
             <p>
-              Asphalt is a popular choice for residential properties for good reason.
-              It creates a smooth, even surface that looks clean and finished, stands up
-              to everyday use, and is straightforward to maintain over time. The result
-              is a practical, attractive upgrade that can enhance the overall appearance
-              of your property.
+              Asphalt is a popular choice for residential properties for good reason. It creates a smooth,
+              even surface that looks clean and finished, stands up to everyday use, and is straightforward
+              to maintain over time. The result is a practical, attractive upgrade that can enhance the
+              overall appearance of your property.
             </p>
 
             <ul>
@@ -850,15 +807,13 @@
         </div>
       </section>
 
-      <!-- SERVICES -->
       <section class="pk-sec pk-pad" aria-label="Residential asphalt paving services">
         <div class="pk-in">
           <div class="pk-head">
             <span class="pk-eyebrow">Our Services</span>
             <h2>Residential Asphalt Paving for Every Part of Your Property</h2>
             <p>
-              From the driveway to the walkways around your home, we pave the surfaces that make daily
-              life smoother and your property more attractive.
+              From the driveway to the walkways around your home, we pave the surfaces that make daily life smoother and your property more attractive.
             </p>
           </div>
 
@@ -896,16 +851,13 @@
         </div>
       </section>
 
-      <!-- FEATURED -->
       <section class="pk-sec pk-pad pk-dark" style="background:var(--pk-charcoal)" aria-label="Featured driveway paving service">
         <div class="pk-in pk-feature-grid">
           <div>
             <span class="pk-eyebrow">Featured Service</span>
             <h2>Upgrade Your Driveway With Smooth, Durable Asphalt</h2>
             <p>
-              Your driveway is one of the first things people notice about your home. Asphalt provides
-              a smooth driving surface that's designed for regular vehicle traffic and is relatively easy
-              to maintain and repair, making it a practical, great-looking upgrade for any property.
+              Your driveway is one of the first things people notice about your home. Asphalt provides a smooth driving surface that's designed for regular vehicle traffic and is relatively easy to maintain and repair, making it a practical, great-looking upgrade for any property.
             </p>
 
             <ul class="pk-bullets">
@@ -924,7 +876,6 @@
         </div>
       </section>
 
-      <!-- ADVANTAGES -->
       <section class="pk-sec pk-pad" aria-label="Why homeowners choose asphalt">
         <div class="pk-in">
           <div class="pk-head">
@@ -956,7 +907,6 @@
         </div>
       </section>
 
-      <!-- LOCAL -->
       <section class="pk-sec pk-pad" aria-label="New Jersey weather and asphalt paving">
         <div class="pk-in pk-local-grid">
           <div class="pk-media pk-media-nj" aria-label="Sealed residential asphalt driveway in a New Jersey neighborhood"></div>
@@ -965,10 +915,7 @@
             <span class="pk-eyebrow">Local Know-How</span>
             <h2>Built With New Jersey Weather in Mind</h2>
             <p>
-              New Jersey's seasonal temperature swings and freezing winters make proper installation and
-              ongoing maintenance especially important for residential asphalt. Steps like sealing the surface
-              and addressing wear early help protect against cracking over time, so your paving continues to
-              look good and hold up through the seasons.
+              New Jersey's seasonal temperature swings and freezing winters make proper installation and ongoing maintenance especially important for residential asphalt. Steps like sealing the surface and addressing wear early help protect against cracking over time, so your paving continues to look good and hold up through the seasons.
             </p>
 
             <ul class="pk-bullets">
@@ -984,7 +931,6 @@
         </div>
       </section>
 
-      <!-- PROCESS -->
       <section class="pk-sec pk-pad pk-process" aria-label="Getting started process">
         <div class="pk-in">
           <div class="pk-head">
@@ -1022,7 +968,6 @@
         </div>
       </section>
 
-      <!-- TRUST -->
       <section class="pk-sec pk-pad pk-dark" style="background:var(--pk-charcoal2)" aria-label="About Parkway Paving">
         <div class="pk-in pk-trust-grid">
           <div>
@@ -1058,21 +1003,20 @@
               </div>
             </div>
 
-            <a class="pk-btn pk-btn-primary pk-btn-block" href="tel:8625960642">
+            <a class="pk-btn pk-btn-primary pk-btn-block" href="tel:8623862693">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.44c.9.33 1.85.56 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
-              Call (862) 596-0642
+              Call (862) 386-2693
             </a>
           </div>
         </div>
       </section>
 
-      <!-- QUOTE -->
       <section class="pk-sec pk-pad" id="pk-quote" aria-label="Request a free quote">
         <div class="pk-in">
           <div class="pk-head pk-center">
             <span class="pk-eyebrow">Free Quote</span>
             <h2>Request Your Free Residential Paving Quote</h2>
-            <p>Tell us about your project and we'll get back to you. Prefer to talk it through? Call <a href="tel:8625960642" style="color:var(--pk-accent-deep);font-weight:800">(862) 596-0642</a>.</p>
+            <p>Tell us about your project and we'll get back to you. Prefer to talk it through? Call <a href="tel:8623862693" style="color:var(--pk-accent-deep);font-weight:800">(862) 386-2693</a>.</p>
           </div>
 
           <div class="pk-formwrap">
@@ -1087,19 +1031,6 @@
                   src="https://links.aichiroleads.com/widget/form/NpZwc3dW7O5udkfs4Dey"
                   style="width:100%;height:711px;border:none;display:block;"
                   id="inline-NpZwc3dW7O5udkfs4Dey"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Form LP"
-                  data-height="711"
-                  data-layout-iframe-id="inline-NpZwc3dW7O5udkfs4Dey"
-                  data-form-id="NpZwc3dW7O5udkfs4Dey"
-                  data-cookie-consent="true"
-                  data-cookie-consent-provider="auto"
                   title="Form LP"
                   loading="lazy">
                 </iframe>
@@ -1111,7 +1042,6 @@
         </div>
       </section>
 
-      <!-- FAQ -->
       <section class="pk-sec pk-pad" style="background:var(--pk-cream2)" aria-label="Frequently asked questions">
         <div class="pk-in">
           <div class="pk-head pk-center">
@@ -1173,7 +1103,6 @@
         </div>
       </section>
 
-      <!-- FINAL CTA -->
       <section class="pk-sec pk-pad pk-final" aria-label="Ready to get started">
         <div class="pk-in">
           <span class="pk-eyebrow" style="justify-content:center">Get Started</span>
@@ -1185,13 +1114,13 @@
               Get a Free Quote
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="pk-btn pk-btn-ghost" href="tel:8625960642">
+            <a class="pk-btn pk-btn-ghost" href="tel:8623862693">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.44c.9.33 1.85.56 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
-              Call (862) 596-0642
+              Call (862) 386-2693
             </a>
           </div>
 
-          <p class="pk-final-phone">Call us directly at <a href="tel:8625960642">(862) 596-0642</a></p>
+          <p class="pk-final-phone">Call us directly at <a href="tel:8623862693">(862) 386-2693</a></p>
         </div>
       </section>
     </div>
@@ -1211,11 +1140,11 @@
         <div>
           <h3>Our Services</h3>
           <ul class="pk-footer-links">
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Commercial Asphalt Paving</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Residential Asphalt Paving</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Parking Lot Paving</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Asphalt Resurfacing</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Asphalt Sealcoating</a></li>
+            <li><a href="https://www.parkwaypaving.com/commercial-asphalt-paving/" target="_blank" rel="noopener noreferrer">Commercial Asphalt Paving</a></li>
+            <li><a href="https://www.parkwaypaving.com/residential-asphalt-paving/" target="_blank" rel="noopener noreferrer">Residential Asphalt Paving</a></li>
+            <li><a href="https://www.parkwaypaving.com/parking-lot-paving/" target="_blank" rel="noopener noreferrer">Parking Lot Paving</a></li>
+            <li><a href="https://www.parkwaypaving.com/asphalt-resurfacing/" target="_blank" rel="noopener noreferrer">Asphalt Resurfacing</a></li>
+            <li><a href="https://www.parkwaypaving.com/asphalt-sealcoating/" target="_blank" rel="noopener noreferrer">Asphalt Sealcoating</a></li>
           </ul>
         </div>
       </div>
@@ -1223,16 +1152,16 @@
       <div class="pk-footer-bottom">
         <p style="margin:0;">COPYRIGHT@2023</p>
         <p style="margin:0;">
-          <a href="#" target="_blank" rel="noopener noreferrer">Terms of service</a>
+          <a href="https://www.parkwaypaving.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of service</a>
           –
-          <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <a href="https://www.parkwaypaving.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </p>
       </div>
     </div>
   </footer>
 
   <div class="pk-sticky">
-    <a class="pk-btn pk-btn-ghost" href="tel:8625960642" style="color:#fff;border-color:rgba(255,255,255,.35)">Call Now</a>
+    <a class="pk-btn pk-btn-ghost" href="tel:8623862693" style="color:#fff;border-color:rgba(255,255,255,.35)">Call Now</a>
     <a class="pk-btn pk-btn-primary" href="#pk-quote">Free Quote</a>
   </div>
 
