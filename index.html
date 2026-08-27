@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Residential Asphalt Paving #2 - Parkway Paving LLC</title>
+  <title>Parkway Paving LLC | Services</title>
   <meta
     name="description"
-    content="Transform Your Property With Professional Asphalt Paving. Residential asphalt paving for driveways, walkways, patios and more across New Jersey."
+    content="Residential Asphalt Paving, Commercial Asphalt Paving, Asphalt Sealcoating, Asphalt Resurfacing, Asphalt Driveway Paving and Parking Lot Paving."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,19 +23,15 @@
       --pk-cream2:#f1e3d2;
       --pk-surface:#fff9f3;
       --pk-white:#ffffff;
-
       --pk-text:#1a1410;
       --pk-muted:#6e5f51;
       --pk-line:#e4d3c1;
-
       --pk-charcoal:#101010;
       --pk-charcoal2:#171717;
       --pk-charcoal3:#1f1f1f;
-
       --pk-accent:#e58a3a;
       --pk-accent-deep:#cf7323;
       --pk-accent-soft:#f6c79a;
-
       --pk-radius:28px;
       --pk-radius-md:22px;
       --pk-radius-sm:16px;
@@ -60,6 +56,7 @@
     a{text-decoration:none;color:inherit}
     button,input,textarea{font:inherit}
     ul{margin:0;padding:0}
+    section{scroll-margin-top:100px}
 
     .sr-only{
       position:absolute;
@@ -74,7 +71,6 @@
       margin-inline:auto;
     }
 
-    .pk-sec{position:relative}
     .pk-pad{padding:var(--pk-pad) 0}
     .pk-dark{color:#fff}
     .pk-dark p{color:rgba(255,255,255,.76)}
@@ -122,9 +118,6 @@
       font-size:1rem;
     }
 
-    .pk-head{max-width:780px}
-    .pk-center{text-align:center;margin-inline:auto}
-
     .pk-btn{
       display:inline-flex;
       align-items:center;
@@ -140,8 +133,6 @@
       cursor:pointer;
       white-space:nowrap;
     }
-
-    .pk-btn svg{width:18px;height:18px;flex:0 0 18px}
 
     .pk-btn-primary{
       background:var(--pk-accent);
@@ -174,8 +165,6 @@
       background:#000;
       transform:translateY(-1px);
     }
-
-    .pk-btn-block{width:100%}
 
     .pk-top{
       position:sticky;
@@ -214,7 +203,7 @@
     .pk-nav{
       display:flex;
       align-items:center;
-      gap:24px;
+      gap:20px;
       flex-wrap:wrap;
     }
 
@@ -245,7 +234,7 @@
 
     .pk-hero-grid{
       display:grid;
-      grid-template-columns:minmax(0,1.1fr) minmax(340px,.75fr);
+      grid-template-columns:minmax(0,1.05fr) minmax(320px,.8fr);
       gap:30px;
       align-items:end;
     }
@@ -264,43 +253,26 @@
       margin-bottom:28px;
     }
 
-    .pk-checks{
-      list-style:none;
+    .pk-service-links{
       display:grid;
       grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:12px 18px;
-      margin:0 0 28px;
+      gap:12px;
+      list-style:none;
     }
 
-    .pk-checks li{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      color:#fff;
-      font-weight:600;
-      font-size:.96rem;
-    }
-
-    .pk-checks svg{
-      width:18px;height:18px;
-      color:var(--pk-accent);
-      margin-top:4px;
-      flex:0 0 18px;
-    }
-
-    .pk-hero-tags{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:14px;
-    }
-
-    .pk-tag{
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.04);
-      border-radius:18px;
-      padding:16px 18px;
+    .pk-service-links a{
+      display:block;
+      padding:14px 16px;
+      border-radius:16px;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.09);
       color:#fff;
       font-weight:700;
+    }
+
+    .pk-service-links a:hover{
+      background:rgba(229,138,58,.16);
+      border-color:rgba(229,138,58,.35);
     }
 
     .pk-panel{
@@ -312,20 +284,12 @@
     }
 
     .pk-panel p{color:rgba(255,255,255,.76)}
-    .pk-panel ul{
-      margin:18px 0 0;
-      padding-left:18px;
-      color:rgba(255,255,255,.86);
-    }
 
-    .pk-panel li+li{margin-top:10px}
-    .pk-panel .pk-btn{margin-top:18px}
-
-    .pk-services{
+    .pk-grid-2{
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:20px;
-      margin-top:34px;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:32px;
+      align-items:start;
     }
 
     .pk-card{
@@ -336,35 +300,35 @@
       box-shadow:var(--pk-shadow);
     }
 
-    .pk-card p{margin-top:10px}
-
-    .pk-feature-grid,
-    .pk-local-grid,
-    .pk-trust-grid{
+    .pk-card p + p{margin-top:12px}
+    .pk-card-grid-3{
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:32px;
-      align-items:center;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:20px;
+      margin-top:28px;
     }
 
-    .pk-bullets,
-    .pk-trust-list{
+    .pk-card-grid-2{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:20px;
+      margin-top:28px;
+    }
+
+    .pk-list{
       list-style:none;
       display:grid;
       gap:12px;
-      margin:24px 0 0;
+      margin:20px 0 0;
     }
 
-    .pk-bullets li,
-    .pk-trust-list li{
+    .pk-list li{
       display:flex;
       gap:10px;
       align-items:flex-start;
     }
 
-    .pk-bullets svg,
-    .pk-trust-list svg,
-    .pk-th svg{
+    .pk-list svg{
       width:18px;
       height:18px;
       flex:0 0 18px;
@@ -372,8 +336,22 @@
       margin-top:4px;
     }
 
+    .pk-cta-band{
+      margin-top:30px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .pk-split-dark{
+      background:var(--pk-charcoal);
+      color:#fff;
+    }
+
+    .pk-split-dark p{color:rgba(255,255,255,.76)}
+
     .pk-media{
-      min-height:430px;
+      min-height:380px;
       border-radius:28px;
       overflow:hidden;
       border:1px solid rgba(255,255,255,.08);
@@ -387,202 +365,46 @@
       content:"";
       position:absolute;
       inset:0;
-      background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.24));
+      background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.26));
     }
 
-    .pk-media-driveway{
-      background-image:
-        linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.15)),
-        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80");
-    }
+    .pk-media-1{background-image:url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80")}
+    .pk-media-2{background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80")}
+    .pk-media-3{background-image:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80")}
+    .pk-media-4{background-image:url("https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80")}
+    .pk-media-5{background-image:url("https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1400&q=80")}
+    .pk-media-6{background-image:url("https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&w=1400&q=80")}
 
-    .pk-media-nj{
-      background-image:
-        linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.18)),
-        url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80");
-    }
-
-    .pk-adv-grid{
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:18px;
-      margin-top:34px;
-    }
-
-    .pk-adv{
-      background:var(--pk-surface);
-      border:1px solid var(--pk-line);
-      border-radius:22px;
-      padding:24px;
-      box-shadow:var(--pk-shadow);
-    }
-
-    .pk-process{
+    .pk-section-nav{
       background:var(--pk-cream);
+      border-top:1px solid var(--pk-line);
+      border-bottom:1px solid var(--pk-line);
     }
 
-    .pk-steps{
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:18px;
-      margin-top:32px;
+    .pk-section-nav-wrap{
+      display:flex;
+      gap:12px;
+      overflow:auto;
+      padding:18px 0;
     }
 
-    .pk-step{
-      background:var(--pk-surface);
-      border:1px solid var(--pk-line);
-      border-radius:24px;
-      padding:24px;
-      box-shadow:var(--pk-shadow);
-    }
-
-    .pk-step-no{
-      width:54px;height:54px;
-      border-radius:50%;
-      display:grid;
-      place-items:center;
-      background:#111;
-      color:#fff;
-      font-weight:900;
-      margin-bottom:16px;
-    }
-
-    .pk-note{
-      margin-top:18px;
-      font-size:.95rem;
-    }
-
-    .pk-trust-list{
-      color:rgba(255,255,255,.88);
-      font-weight:600;
-    }
-
-    .pk-trust-card{
-      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:28px;
-      padding:30px;
-      box-shadow:var(--pk-shadow);
-    }
-
-    .pk-tc-badge{
+    .pk-chip{
       display:inline-flex;
       align-items:center;
-      gap:8px;
-      padding:9px 12px;
+      justify-content:center;
+      padding:12px 16px;
       border-radius:999px;
-      background:rgba(229,138,58,.14);
-      color:#ffb26a;
-      font-size:.84rem;
-      font-weight:800;
-      margin-bottom:18px;
-    }
-
-    .pk-tc-badge svg{width:17px;height:17px}
-
-    .pk-trust-hours{
-      display:grid;
-      gap:12px;
-      margin:20px 0 22px;
-    }
-
-    .pk-th{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      color:rgba(255,255,255,.84);
-      font-weight:600;
-    }
-
-    .pk-formwrap{
-      margin-top:34px;
-    }
-
-    .pk-formcard{
-      background:var(--pk-surface);
-      border:1px solid var(--pk-line);
-      border-radius:28px;
-      box-shadow:var(--pk-shadow);
-      padding:26px;
-    }
-
-    .pk-formhd{margin-bottom:18px}
-    .pk-formhd p{margin-top:8px}
-
-    .pk-ghl-form-embed{
-      border-radius:18px;
-      overflow:hidden;
       background:#fff;
-      border:1px solid #ece7df;
-    }
-
-    .pk-faq{
-      display:grid;
-      gap:14px;
-    }
-
-    .pk-qa{
-      background:var(--pk-surface);
       border:1px solid var(--pk-line);
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:var(--pk-shadow);
-    }
-
-    .pk-qa-q{
-      width:100%;
-      border:0;
-      background:var(--pk-surface);
       color:var(--pk-text);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      text-align:left;
-      padding:22px 24px;
-      font-weight:800;
-      cursor:pointer;
+      font-weight:700;
+      white-space:nowrap;
     }
 
-    .pk-pm{
-      width:18px;
-      height:18px;
-      position:relative;
-      flex:0 0 18px;
-    }
-
-    .pk-pm::before,
-    .pk-pm::after{
-      content:"";
-      position:absolute;
-      left:50%;
-      top:50%;
-      width:16px;
-      height:2px;
-      background:var(--pk-text);
-      transform:translate(-50%,-50%);
-      border-radius:999px;
-      transition:.25s ease;
-    }
-
-    .pk-pm::after{
-      transform:translate(-50%,-50%) rotate(90deg);
-    }
-
-    .pk-qa-q[aria-expanded="true"] .pk-pm::after{
-      opacity:0;
-      transform:translate(-50%,-50%) rotate(0deg);
-    }
-
-    .pk-qa-a{
-      max-height:0;
-      overflow:hidden;
-      transition:max-height .32s ease;
-      background:var(--pk-surface);
-    }
-
-    .pk-qa-a p{
-      padding:0 24px 22px;
+    .pk-chip:hover{
+      background:var(--pk-accent);
+      color:#fff;
+      border-color:var(--pk-accent);
     }
 
     .pk-final{
@@ -605,16 +427,6 @@
       justify-content:center;
       gap:14px;
       flex-wrap:wrap;
-    }
-
-    .pk-final-phone{
-      margin-top:18px;
-      color:rgba(255,255,255,.84)!important;
-    }
-
-    .pk-final-phone a{
-      color:#fff;
-      font-weight:800;
     }
 
     .pk-footer{
@@ -643,48 +455,20 @@
       gap:10px;
     }
 
-    .pk-footer-bottom{
-      display:flex;
-      justify-content:space-between;
-      gap:14px;
-      flex-wrap:wrap;
-      padding-top:18px;
-      font-size:.95rem;
-    }
-
-    .pk-sticky{
-      position:fixed;
-      left:12px;
-      right:12px;
-      bottom:12px;
-      z-index:1200;
-      display:none;
-      gap:10px;
-      padding:12px;
-      border-radius:20px;
-      background:rgba(17,17,17,.94);
-      backdrop-filter:blur(10px);
-      box-shadow:0 18px 40px rgba(0,0,0,.28);
-    }
-
-    .pk-sticky .pk-btn{
-      flex:1 1 0;
-      min-width:0;
-    }
-
     @media (max-width:1100px){
       .pk-hero-grid,
-      .pk-feature-grid,
-      .pk-local-grid,
-      .pk-trust-grid,
+      .pk-grid-2,
       .pk-footer-grid{
         grid-template-columns:1fr;
       }
 
-      .pk-services{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .pk-adv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .pk-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .pk-checks{grid-template-columns:1fr}
+      .pk-card-grid-3{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+
+      .pk-service-links{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
     }
 
     @media (max-width:760px){
@@ -700,30 +484,27 @@
         width:100%;
       }
 
-      .pk-nav{gap:14px}
       .pk-top-cta .pk-btn{width:100%}
-
-      .pk-hero-tags,
-      .pk-services,
-      .pk-adv-grid,
-      .pk-steps{
+      .pk-card-grid-3,
+      .pk-card-grid-2,
+      .pk-service-links{
         grid-template-columns:1fr;
       }
 
-      .pk-panel,
       .pk-card,
-      .pk-adv,
-      .pk-step,
-      .pk-trust-card,
-      .pk-formcard{
+      .pk-panel{
         padding:22px;
       }
 
-      .pk-media{min-height:320px}
-      .pk-final-cta{flex-direction:column}
-      .pk-final-cta .pk-btn{width:100%}
-      .pk-sticky{display:flex}
-      body{padding-bottom:92px}
+      .pk-hero-cta,
+      .pk-final-cta{
+        flex-direction:column;
+      }
+
+      .pk-hero-cta .pk-btn,
+      .pk-final-cta .pk-btn{
+        width:100%;
+      }
     }
   </style>
 </head>
@@ -732,406 +513,425 @@
 
   <header class="pk-top">
     <div class="pk-in pk-topbar">
-      <a href="https://www.parkwaypaving.com/" class="pk-logo" target="_blank" rel="noopener noreferrer" aria-label="Parkway Paving LLC Home">
+      <a href="#" class="pk-logo" aria-label="Parkway Paving LLC Home">
         <img src="https://www.parkwaypaving.com/wp-content/uploads/2022/08/parkway-logo.png" alt="Parkway Paving LLC logo" />
         <span>Parkway Paving LLC</span>
       </a>
 
       <nav class="pk-nav" aria-label="Main navigation">
-        <a href="https://www.parkwaypaving.com/" target="_blank" rel="noopener noreferrer">Home</a>
-        <a href="https://www.parkwaypaving.com/about-us/" target="_blank" rel="noopener noreferrer">About Us</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
         <span>Services</span>
         <span>Blog</span>
-        <a href="https://www.parkwaypaving.com/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="#">Contact</a>
       </nav>
 
       <div class="pk-top-cta">
         <a class="pk-btn pk-btn-ghost" href="tel:8625960642">CALL US TODAY (862) 596-0642</a>
-        <a class="pk-btn pk-btn-primary" href="#pk-quote">Get a Free Quote</a>
+        <a class="pk-btn pk-btn-primary" href="#quote">Get a Free Quote</a>
       </div>
     </div>
   </header>
 
   <main id="content">
-    <div id="parkway-residential-page">
 
-      <section class="pk-sec pk-hero" aria-label="Residential asphalt paving hero">
-        <div class="pk-in pk-hero-grid">
-          <div>
-            <span class="pk-eyebrow">Residential Asphalt Paving</span>
-            <h1>Transform Your Property With Professional Asphalt Paving</h1>
-            <p class="pk-lead">
-              Give your home a smooth, attractive, and durable surface built for everyday living.
-              From driveways and walkways to patios and more, Parkway Paving delivers clean,
-              professional residential asphalt paving across New Jersey.
-            </p>
+    <section class="pk-hero">
+      <div class="pk-in pk-hero-grid">
+        <div>
+          <span class="pk-eyebrow">Services</span>
+          <h1>Asphalt Paving Services Built Around Your Property</h1>
+          <p class="pk-lead">
+            Explore residential and commercial paving solutions, along with sealcoating, resurfacing,
+            driveway paving, and parking lot paving, all presented in the same mockup style you’ve
+            been building.
+          </p>
 
-            <div class="pk-hero-cta">
-              <a class="pk-btn pk-btn-primary" href="#pk-quote">Get a Free Quote</a>
-              <a class="pk-btn pk-btn-ghost" href="tel:8625960642">Call (862) 596-0642</a>
-            </div>
-
-            <ul class="pk-checks" aria-label="Key benefits">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-                <span>Residential paving specialists</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-                <span>Durable, low-maintenance surfaces</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-                <span>Professional installation</span>
-              </li>
-            </ul>
-
-            <div class="pk-hero-tags">
-              <div class="pk-tag">Improved curb appeal</div>
-              <div class="pk-tag">Durable surface</div>
-              <div class="pk-tag">Low maintenance</div>
-              <div class="pk-tag">Built for everyday residential use</div>
-            </div>
+          <div class="pk-hero-cta">
+            <a class="pk-btn pk-btn-primary" href="#services-nav">View Services</a>
+            <a class="pk-btn pk-btn-ghost" href="#quote">Get a Free Quote</a>
           </div>
 
-          <aside class="pk-panel">
-            <span class="pk-eyebrow">Why Asphalt</span>
-            <h3>A Better Surface for Your Home</h3>
+          <div class="pk-service-links">
+            <a href="#residential">Residential Asphalt Paving</a>
+            <a href="#commercial">Commercial Asphalt Paving</a>
+            <a href="#sealcoating">Asphalt Sealcoating</a>
+            <a href="#resurfacing">Asphalt Resurfacing</a>
+            <a href="#driveway">Asphalt Driveway Paving</a>
+            <a href="#parking">Parking Lot Paving</a>
+          </div>
+        </div>
+
+        <aside class="pk-panel">
+          <span class="pk-eyebrow">Included</span>
+          <h3>Six service sections ready in one page</h3>
+          <p>
+            This mockup includes all six requested services as full sections so you can publish
+            them together or later split them into separate internal pages with the same design system.
+          </p>
+
+          <ul class="pk-list" style="margin-top:18px;">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+              Same mockup styling across all services
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+              Content based on Parkway Paving service copy
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+              Sticky header and orange mockup palette
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="pk-section-nav" id="services-nav">
+      <div class="pk-in">
+        <div class="pk-section-nav-wrap">
+          <a class="pk-chip" href="#residential">Residential Asphalt Paving</a>
+          <a class="pk-chip" href="#commercial">Commercial Asphalt Paving</a>
+          <a class="pk-chip" href="#sealcoating">Asphalt Sealcoating</a>
+          <a class="pk-chip" href="#resurfacing">Asphalt Resurfacing</a>
+          <a class="pk-chip" href="#driveway">Asphalt Driveway Paving</a>
+          <a class="pk-chip" href="#parking">Parking Lot Paving</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pk-pad" id="residential">
+      <div class="pk-in pk-grid-2">
+        <div>
+          <span class="pk-eyebrow">Residential Asphalt Paving</span>
+          <h2>Residential Asphalt Paving</h2>
+          <p>
+            Asphalt paving helps make your property look its best and provides durable, low-maintenance
+            surfaces around the home. Driveways, walkways, patios, pool decks, porches, and sidewalks
+            can all benefit from properly installed asphalt paving. [attached_file:1]
+          </p>
+
+          <ul class="pk-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Driveway asphalt paving creates a smooth vehicle surface and is easy to maintain. [attached_file:1]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Walkway asphalt paving provides a safe, attractive walking surface for pedestrians. [attached_file:1]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Patios, pool decks, porches, and sidewalks are presented as practical low-maintenance options for homeowners. [attached_file:1]</span></li>
+          </ul>
+
+          <div class="pk-cta-band">
+            <a class="pk-btn pk-btn-primary" href="#quote">Get a Free Quote</a>
+            <a class="pk-btn pk-btn-dark" href="tel:8625960642">Call (862) 596-0642</a>
+          </div>
+        </div>
+
+        <div class="pk-media pk-media-1" aria-label="Residential asphalt paving"></div>
+      </div>
+
+      <div class="pk-in">
+        <div class="pk-card-grid-3">
+          <article class="pk-card">
+            <h3>Driveway Asphalt Paving</h3>
             <p>
-              Asphalt is a popular choice for residential properties for good reason. It creates a smooth,
-              even surface that looks clean and finished, stands up to everyday use, and is straightforward
-              to maintain over time. The result is a practical, attractive upgrade that can enhance the
-              overall appearance of your property.
+              One of the most popular types of residential asphalt paving, driveway paving provides a
+              smooth surface for vehicles and is very easy to maintain for homeowners who want a
+              low-maintenance driveway. [attached_file:1]
             </p>
-            <ul>
-              <li>Smooth, even, finished surface</li>
-              <li>Durable and built to hold up to daily use</li>
-              <li>Easy to maintain and enhances curb appeal</li>
-            </ul>
-            <a class="pk-btn pk-btn-primary" href="#pk-quote">Request a Free Quote</a>
-          </aside>
-        </div>
-      </section>
+          </article>
 
-      <section class="pk-sec pk-pad" aria-label="Residential asphalt paving services">
-        <div class="pk-in">
-          <div class="pk-head">
-            <span class="pk-eyebrow">Our Services</span>
-            <h2>Residential Asphalt Paving for Every Part of Your Property</h2>
+          <article class="pk-card">
+            <h3>Walkway Asphalt Paving</h3>
             <p>
-              From the driveway to the walkways around your home, we pave the surfaces that make daily life smoother and your property more attractive.
+              Walkway asphalt paving provides a safe and attractive walking surface and is also easy
+              to maintain, making it a good option for low-maintenance pedestrian areas. [attached_file:1]
             </p>
-          </div>
+          </article>
 
-          <div class="pk-services">
-            <article class="pk-card">
-              <h3>Driveway Asphalt Paving</h3>
-              <p>A smooth, durable driveway built for regular vehicle traffic. Asphalt gives your home a clean, finished entrance that's easy to maintain over time.</p>
-            </article>
-
-            <article class="pk-card">
-              <h3>Walkway Asphalt Paving</h3>
-              <p>Safe, even walkways that connect the spaces around your home. A paved path adds a polished look while standing up to everyday foot traffic.</p>
-            </article>
-
-            <article class="pk-card">
-              <h3>Patio Asphalt Paving</h3>
-              <p>Create a durable outdoor patio surface for relaxing and entertaining. Asphalt offers a low-maintenance foundation for your backyard living space.</p>
-            </article>
-
-            <article class="pk-card">
-              <h3>Pool Deck Asphalt Paving</h3>
-              <p>A solid, even surface around your pool area that handles regular use. Paved pool decks provide a clean, cohesive look for your outdoor space.</p>
-            </article>
-
-            <article class="pk-card">
-              <h3>Porch Asphalt Paving</h3>
-              <p>Give your porch area a smooth, finished surface that complements your home. Asphalt paving adds function and curb appeal right at your entryway.</p>
-            </article>
-
-            <article class="pk-card">
-              <h3>Sidewalk Asphalt Paving</h3>
-              <p>Durable sidewalk paving that improves access and appearance around your property. A well-paved sidewalk keeps pathways smooth, even, and easy to use.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="pk-sec pk-pad pk-dark" style="background:var(--pk-charcoal)" aria-label="Featured driveway paving service">
-        <div class="pk-in pk-feature-grid">
-          <div>
-            <span class="pk-eyebrow">Featured Service</span>
-            <h2>Upgrade Your Driveway With Smooth, Durable Asphalt</h2>
+          <article class="pk-card">
+            <h3>Patio, Pool Deck, Porch & Sidewalk</h3>
             <p>
-              Your driveway is one of the first things people notice about your home. Asphalt provides a smooth driving surface that's designed for regular vehicle traffic and is relatively easy to maintain and repair, making it a practical, great-looking upgrade for any property.
+              These residential areas are presented as durable, attractive outdoor surfaces, with benefits
+              that include easier upkeep, improved appearance, and repairability when sections become damaged. [attached_file:1]
             </p>
-
-            <ul class="pk-bullets">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Clean, finished appearance</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Smooth driving surface</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Designed for regular vehicle traffic</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Straightforward maintenance and repairs</span></li>
-            </ul>
-
-            <div style="margin-top:24px;">
-              <a class="pk-btn pk-btn-primary" href="#pk-quote">Request a Free Quote</a>
-            </div>
-          </div>
-
-          <div class="pk-media pk-media-driveway" aria-label="Newly paved smooth asphalt driveway at a residential home"></div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="pk-sec pk-pad" aria-label="Why homeowners choose asphalt">
-        <div class="pk-in">
-          <div class="pk-head">
-            <span class="pk-eyebrow">The Advantages</span>
-            <h2>Why Homeowners Choose Asphalt</h2>
-          </div>
+    <section class="pk-pad pk-split-dark" id="commercial">
+      <div class="pk-in pk-grid-2">
+        <div>
+          <span class="pk-eyebrow">Commercial Asphalt Paving</span>
+          <h2>Commercial Asphalt Paving</h2>
+          <p>
+            Parkway Paving LLC presents commercial asphalt paving as a service for businesses of all sizes,
+            with experience handling work from small parking lots to large industrial complexes in Lodi, NJ. [attached_file:2]
+          </p>
 
-          <div class="pk-adv-grid">
-            <article class="pk-adv">
-              <h3>Durable</h3>
-              <p>Designed to withstand vehicle traffic and changing weather conditions.</p>
-            </article>
+          <ul class="pk-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The company describes a customized approach for new construction, repair, and maintenance projects. [attached_file:2]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Commercial services listed include tennis and basketball courts, golf cart paths, walking paths, farm roads, county highways, and parking lots. [attached_file:2]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The page emphasizes quality workmanship, good materials, and customer service across projects. [attached_file:2]</span></li>
+          </ul>
 
-            <article class="pk-adv">
-              <h3>Low Maintenance</h3>
-              <p>Routine maintenance can help keep asphalt looking and performing well.</p>
-            </article>
-
-            <article class="pk-adv">
-              <h3>Attractive</h3>
-              <p>A clean paved surface can significantly improve the appearance of a property.</p>
-            </article>
-
-            <article class="pk-adv">
-              <h3>Repairable</h3>
-              <p>Damaged sections can often be repaired without replacing the entire paved area.</p>
-            </article>
+          <div class="pk-cta-band">
+            <a class="pk-btn pk-btn-primary" href="#quote">Request a Quote</a>
           </div>
         </div>
-      </section>
 
-      <section class="pk-sec pk-pad" aria-label="New Jersey weather and asphalt paving">
-        <div class="pk-in pk-local-grid">
-          <div class="pk-media pk-media-nj" aria-label="Sealed residential asphalt driveway in a New Jersey neighborhood"></div>
+        <div class="pk-media pk-media-3" aria-label="Commercial asphalt paving"></div>
+      </div>
 
-          <div>
-            <span class="pk-eyebrow">Local Know-How</span>
-            <h2>Built With New Jersey Weather in Mind</h2>
+      <div class="pk-in">
+        <div class="pk-card-grid-3">
+          <article class="pk-card">
+            <h3>Trusted by Businesses</h3>
             <p>
-              New Jersey's seasonal temperature swings and freezing winters make proper installation and ongoing maintenance especially important for residential asphalt. Steps like sealing the surface and addressing wear early help protect against cracking over time, so your paving continues to look good and hold up through the seasons.
+              The commercial page says Parkway Paving LLC is trusted by businesses throughout Lodi, NJ
+              for commercial paving needs ranging from smaller lots to larger sites. [attached_file:2]
             </p>
+          </article>
 
-            <ul class="pk-bullets">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Installation that accounts for seasonal change</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Sealing to help guard against cracking</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Maintenance that helps protect your investment</span></li>
-            </ul>
+          <article class="pk-card">
+            <h3>Commercial Paving Services</h3>
+            <p>
+              The service copy says the team can handle repair or replacement and offers a customized
+              approach depending on each business and project. [attached_file:2]
+            </p>
+          </article>
 
-            <div style="margin-top:24px;">
-              <a class="pk-btn pk-btn-dark" href="#pk-quote">Get a Free Quote</a>
-            </div>
+          <article class="pk-card">
+            <h3>Specialty Commercial Areas</h3>
+            <p>
+              The listed service areas include courts, golf cart paths, walking paths, farm roads,
+              county highways, and commercial or private parking lots. [attached_file:2]
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pk-pad" id="sealcoating">
+      <div class="pk-in pk-grid-2">
+        <div>
+          <span class="pk-eyebrow">Asphalt Sealcoating</span>
+          <h2>Asphalt Sealcoating</h2>
+          <p>
+            Parkway Paving describes asphalt sealcoating as an important step for protecting asphalt
+            surfaces from the elements by creating a barrier that helps extend pavement life. [web:11]
+          </p>
+
+          <ul class="pk-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Sealcoating helps protect pavement from the elements and can extend lifespan. [web:10][web:11]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>It also makes asphalt easier to clean and can improve property appearance. [web:10][web:11]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The company presents this service to property owners in the New Jersey area. [web:10][web:11]</span></li>
+          </ul>
+
+          <div class="pk-cta-band">
+            <a class="pk-btn pk-btn-primary" href="#quote">Get a Free Quote</a>
           </div>
         </div>
-      </section>
 
-      <section class="pk-sec pk-pad pk-process" aria-label="Getting started process">
-        <div class="pk-in">
-          <div class="pk-head">
-            <span class="pk-eyebrow">Simple Process</span>
-            <h2>Getting Started Is Easy</h2>
-          </div>
+        <div class="pk-media pk-media-4" aria-label="Asphalt sealcoating"></div>
+      </div>
 
-          <div class="pk-steps">
-            <article class="pk-step">
-              <div class="pk-step-no">1</div>
-              <h3>Tell Us About Your Project</h3>
-              <p>Share what you're looking to pave and the areas of your property involved.</p>
-            </article>
+      <div class="pk-in">
+        <div class="pk-card-grid-2">
+          <article class="pk-card">
+            <h3>Protection</h3>
+            <p>
+              The public Parkway Paving service copy frames sealcoating as a protective barrier between
+              the asphalt and weather exposure. [web:10][web:11]
+            </p>
+          </article>
 
-            <article class="pk-step">
-              <div class="pk-step-no">2</div>
-              <h3>Review Your Paving Needs</h3>
-              <p>We'll go over the details of your residential asphalt paving project with you.</p>
-            </article>
-
-            <article class="pk-step">
-              <div class="pk-step-no">3</div>
-              <h3>Receive Your Quote</h3>
-              <p>Get a free quote for the work you're considering, with no obligation.</p>
-            </article>
-
-            <article class="pk-step">
-              <div class="pk-step-no">4</div>
-              <h3>Schedule Your Project</h3>
-              <p>Once you're ready, we'll coordinate a time to complete your paving.</p>
-            </article>
-          </div>
-
-          <p class="pk-note">These are general steps in a typical customer journey and are not contractual promises.</p>
+          <article class="pk-card">
+            <h3>Appearance & Upkeep</h3>
+            <p>
+              The same copy says sealcoating improves appearance and makes asphalt surfaces easier to clean. [web:10][web:11]
+            </p>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="pk-sec pk-pad pk-dark" style="background:var(--pk-charcoal2)" aria-label="About Parkway Paving">
-        <div class="pk-in pk-trust-grid">
-          <div>
-            <span class="pk-eyebrow">Parkway Paving LLC</span>
-            <h2>Residential Paving From a Contractor You Can Count On</h2>
-            <p>Parkway Paving LLC brings residential and commercial paving experience to every project, with a focus on quality workmanship and dependable customer service. We provide custom paving solutions and professional paving services tailored to your property and what you need done.</p>
+    <section class="pk-pad pk-split-dark" id="resurfacing">
+      <div class="pk-in pk-grid-2">
+        <div>
+          <span class="pk-eyebrow">Asphalt Resurfacing</span>
+          <h2>Asphalt Resurfacing</h2>
+          <p>
+            Parkway Paving describes asphalt resurfacing as a process that can revitalize pavement,
+            repair surface damage, improve appearance, and extend the life of the asphalt surface. [web:44]
+          </p>
 
-            <ul class="pk-trust-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Residential and commercial paving experience</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Quality workmanship</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Dependable customer service</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Custom paving solutions</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Professional paving services</li>
-            </ul>
-          </div>
+          <ul class="pk-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The process includes removing the top surface, checking the subgrade, making repairs if needed, and installing new asphalt in layers. [web:44]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Resurfacing is presented as a way to improve pavement without the cost of full replacement. [web:44]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The company promotes resurfacing as part of its asphalt paving and resurfacing specialization. [web:44]</span></li>
+          </ul>
 
-          <div class="pk-trust-card">
-            <span class="pk-tc-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"/></svg>
-              Here When You Need Us
-            </span>
-
-            <h3>Flexible Scheduling for Homeowners</h3>
-            <p>Have a project in mind or an issue that needs attention? Reach out to discuss your residential asphalt paving and request a free quote.</p>
-
-            <div class="pk-trust-hours">
-              <div class="pk-th">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                Extended hours available by appointment
-              </div>
-              <div class="pk-th">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
-                Emergency service available
-              </div>
-            </div>
-
-            <a class="pk-btn pk-btn-primary pk-btn-block" href="tel:8625960642">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.44c.9.33 1.85.56 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
-              Call (862) 596-0642
-            </a>
+          <div class="pk-cta-band">
+            <a class="pk-btn pk-btn-primary" href="#quote">Request a Quote</a>
           </div>
         </div>
-      </section>
 
-      <section class="pk-sec pk-pad" id="pk-quote" aria-label="Request a free quote">
-        <div class="pk-in">
-          <div class="pk-head pk-center">
-            <span class="pk-eyebrow">Free Quote</span>
-            <h2>Request Your Free Residential Paving Quote</h2>
-            <p>Tell us about your project and we'll get back to you. Prefer to talk it through? Call <a href="tel:8625960642" style="color:var(--pk-accent-deep);font-weight:800">(862) 596-0642</a>.</p>
-          </div>
+        <div class="pk-media pk-media-5" aria-label="Asphalt resurfacing"></div>
+      </div>
 
-          <div class="pk-formwrap">
-            <div class="pk-formcard">
-              <div class="pk-formhd">
-                <h3>Get a Free Quote</h3>
-                <p>Fill out the short form and our team will follow up about your paving project.</p>
-              </div>
+      <div class="pk-in">
+        <div class="pk-card-grid-3">
+          <article class="pk-card">
+            <h3>Surface Renewal</h3>
+            <p>
+              The resurfacing content explains that a new layer of asphalt can fill cracks or holes
+              and even out the surface. [web:44]
+            </p>
+          </article>
 
-              <div class="pk-ghl-form-embed">
-                <iframe
-                  src="https://links.aichiroleads.com/widget/form/NpZwc3dW7O5udkfs4Dey"
-                  style="width:100%;height:711px;border:none;display:block;"
-                  id="inline-NpZwc3dW7O5udkfs4Dey"
-                  title="Form LP"
-                  loading="lazy">
-                </iframe>
-              </div>
-              <script src="https://links.aichiroleads.com/js/form_embed.js"></script>
-            </div>
+          <article class="pk-card">
+            <h3>Underlying Repairs</h3>
+            <p>
+              Before the new surface is installed, the underlying area is checked and repaired if necessary. [web:44]
+            </p>
+          </article>
+
+          <article class="pk-card">
+            <h3>Extended Pavement Life</h3>
+            <p>
+              Parkway Paving positions resurfacing as a way to revitalize pavement and extend service life. [web:44]
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pk-pad" id="driveway">
+      <div class="pk-in pk-grid-2">
+        <div>
+          <span class="pk-eyebrow">Asphalt Driveway Paving</span>
+          <h2>Asphalt Driveway Paving</h2>
+          <p>
+            Residential driveway paving is described by Parkway Paving as one of the most popular
+            residential asphalt paving options because it provides a smooth vehicle surface and is easy
+            to maintain. [attached_file:1]
+          </p>
+
+          <ul class="pk-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Driveway paving is presented as a low-maintenance choice for homeowners. [attached_file:1]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>Additional Parkway content compares asphalt driveways favorably for reliability and notes the asphalt layer is followed by a sealing coat. [web:20]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>This makes driveway paving a strong dedicated service block inside the services page. [attached_file:1][web:20]</span></li>
+          </ul>
+
+          <div class="pk-cta-band">
+            <a class="pk-btn pk-btn-primary" href="#quote">Get a Free Quote</a>
           </div>
         </div>
-      </section>
 
-      <section class="pk-sec pk-pad" style="background:var(--pk-cream2)" aria-label="Frequently asked questions">
-        <div class="pk-in">
-          <div class="pk-head pk-center">
-            <span class="pk-eyebrow">FAQ</span>
-            <h2>Residential Asphalt Paving Questions</h2>
-          </div>
+        <div class="pk-media pk-media-2" aria-label="Asphalt driveway paving"></div>
+      </div>
 
-          <div class="pk-faq" style="margin-top:clamp(28px,4vw,44px)">
-            <div class="pk-qa">
-              <button class="pk-qa-q" type="button" aria-expanded="false">
-                <span>What are the benefits of residential asphalt paving?</span>
-                <span class="pk-pm" aria-hidden="true"></span>
-              </button>
-              <div class="pk-qa-a">
-                <p>Residential asphalt paving creates a smooth, durable surface that's low maintenance and can improve your home's curb appeal. It holds up to everyday use and gives areas like driveways and walkways a clean, finished look.</p>
-              </div>
-            </div>
+      <div class="pk-in">
+        <div class="pk-card-grid-2">
+          <article class="pk-card">
+            <h3>Smooth Access</h3>
+            <p>
+              Driveway asphalt paving is described as providing a smooth surface for vehicles. [attached_file:1]
+            </p>
+          </article>
 
-            <div class="pk-qa">
-              <button class="pk-qa-q" type="button" aria-expanded="false">
-                <span>Is asphalt a good option for driveways?</span>
-                <span class="pk-pm" aria-hidden="true"></span>
-              </button>
-              <div class="pk-qa-a">
-                <p>Yes. Asphalt provides a smooth driving surface designed for regular vehicle traffic, and it's relatively easy to maintain and repair, which makes it a practical choice for residential driveways.</p>
-              </div>
-            </div>
+          <article class="pk-card">
+            <h3>Low Maintenance</h3>
+            <p>
+              The service copy presents driveway paving as an option for homeowners who want easier upkeep. [attached_file:1]
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <div class="pk-qa">
-              <button class="pk-qa-q" type="button" aria-expanded="false">
-                <span>How do I maintain an asphalt driveway?</span>
-                <span class="pk-pm" aria-hidden="true"></span>
-              </button>
-              <div class="pk-qa-a">
-                <p>Routine maintenance helps keep asphalt looking and performing well. In New Jersey's climate, sealing the surface and addressing wear early can help guard against cracking caused by seasonal temperature changes.</p>
-              </div>
-            </div>
+    <section class="pk-pad pk-split-dark" id="parking">
+      <div class="pk-in pk-grid-2">
+        <div>
+          <span class="pk-eyebrow">Parking Lot Paving</span>
+          <h2>Parking Lot Paving</h2>
+          <p>
+            Parkway Paving’s public service content describes parking lot paving as part of its commercial
+            asphalt work, and another public page promotes expert parking lot paving in Lodi, NJ focused
+            on improving business properties with lasting asphalt and safety benefits. [attached_file:2][web:19]
+          </p>
 
-            <div class="pk-qa">
-              <button class="pk-qa-q" type="button" aria-expanded="false">
-                <span>Can asphalt be used for walkways and patios?</span>
-                <span class="pk-pm" aria-hidden="true"></span>
-              </button>
-              <div class="pk-qa-a">
-                <p>Yes. In addition to driveways, asphalt can be used for walkways, patios, pool decks, porches, and sidewalks, giving different areas around your home a consistent, durable surface.</p>
-              </div>
-            </div>
+          <ul class="pk-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The commercial page states asphalt paving is a common solution for commercial and private parking lots. [attached_file:2]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>That copy also emphasizes durability and long-lasting performance for many property owners. [attached_file:2]</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span>The related public article promotes professional parking lot paving services for business improvement and safety. [web:19]</span></li>
+          </ul>
 
-            <div class="pk-qa">
-              <button class="pk-qa-q" type="button" aria-expanded="false">
-                <span>Can damaged asphalt be repaired?</span>
-                <span class="pk-pm" aria-hidden="true"></span>
-              </button>
-              <div class="pk-qa-a">
-                <p>Often, yes. Damaged sections can frequently be repaired without replacing the entire paved area. Reach out and we can discuss your specific situation and provide a free quote.</p>
-              </div>
-            </div>
+          <div class="pk-cta-band">
+            <a class="pk-btn pk-btn-primary" href="#quote">Request a Quote</a>
           </div>
         </div>
-      </section>
 
-      <section class="pk-sec pk-pad pk-final" aria-label="Ready to get started">
-        <div class="pk-in">
-          <span class="pk-eyebrow" style="justify-content:center">Get Started</span>
-          <h2>Ready to Improve Your Property?</h2>
-          <p>Contact Parkway Paving LLC to discuss your residential asphalt paving project and request a free quote.</p>
+        <div class="pk-media pk-media-6" aria-label="Parking lot paving"></div>
+      </div>
 
-          <div class="pk-final-cta">
-            <a class="pk-btn pk-btn-primary" href="#pk-quote">
-              Get a Free Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+      <div class="pk-in">
+        <div class="pk-card-grid-3">
+          <article class="pk-card">
+            <h3>Commercial or Private Lots</h3>
+            <p>
+              Parkway’s commercial copy explicitly includes both commercial and private parking lot paving. [attached_file:2]
+            </p>
+          </article>
 
-            <a class="pk-btn pk-btn-ghost" href="tel:8625960642">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.44c.9.33 1.85.56 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
-              Call (862) 596-0642
-            </a>
-          </div>
+          <article class="pk-card">
+            <h3>Durable Surface</h3>
+            <p>
+              The same service text says asphalt parking lot paving is durable and long-lasting. [attached_file:2]
+            </p>
+          </article>
 
-          <p class="pk-final-phone">Call us directly at <a href="tel:8625960642">(862) 596-0642</a></p>
+          <article class="pk-card">
+            <h3>Business Presentation</h3>
+            <p>
+              The related parking lot article frames professional paving as a way to improve a business property. [web:19]
+            </p>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </div>
+    <section class="pk-pad" id="quote" style="background:var(--pk-cream);">
+      <div class="pk-in" style="text-align:center;">
+        <span class="pk-eyebrow">Free Quote</span>
+        <h2>Request a Quote for Any Service</h2>
+        <p style="max-width:760px;margin:0 auto;">
+          Parkway Paving’s public site lists mobile contact at (862) 596-0642, along with business hours
+          Monday through Saturday from 8:00 am to 5:00 pm, with extended hours by appointment and emergency
+          service available. [web:10][web:11]
+        </p>
+
+        <div class="pk-final-cta">
+          <a class="pk-btn pk-btn-primary" href="tel:8625960642">Call (862) 596-0642</a>
+          <a class="pk-btn pk-btn-dark" href="mailto:parkwaypavingllc@gmail.com">Email Parkway Paving</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pk-pad pk-final">
+      <div class="pk-in">
+        <span class="pk-eyebrow" style="justify-content:center">Get Started</span>
+        <h2>Need the same design on separate pages too?</h2>
+        <p>
+          This one-page services version is ready, and each service block can now be split into its own
+          dedicated page while keeping the same orange mockup style and structure. [page:30]
+        </p>
+
+        <div class="pk-final-cta">
+          <a class="pk-btn pk-btn-primary" href="#services-nav">Review Services</a>
+          <a class="pk-btn pk-btn-ghost" href="#quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="pk-footer">
@@ -1140,78 +940,27 @@
         <div>
           <h3>Parkway Paving LLC</h3>
           <p style="margin-top:14px;max-width:720px;">
-            If you’re looking for top-quality paving services in the area, look no further than Parkway Paving LLC. We offer a wide range of services, from residential to commercial, and we’re always happy to answer any questions you may have. Give us a call today!
+            Parkway Paving LLC publicly presents itself as a full-service asphalt paving contractor
+            serving customers in the New Jersey region, with services including commercial and residential
+            asphalt paving, parking lot paving, driveway paving, sealcoating, and more. [web:11]
           </p>
-          <p style="margin-top:14px;">Extended hours available by appointment. Emergency service available.</p>
         </div>
 
         <div>
           <h3>Our Services</h3>
           <ul class="pk-footer-links">
-            <li><a href="https://www.parkwaypaving.com/commercial-asphalt-paving/" target="_blank" rel="noopener noreferrer">Commercial Asphalt Paving</a></li>
-            <li><a href="https://www.parkwaypaving.com/residential-asphalt-paving/" target="_blank" rel="noopener noreferrer">Residential Asphalt Paving</a></li>
-            <li><a href="https://www.parkwaypaving.com/parking-lot-paving/" target="_blank" rel="noopener noreferrer">Parking Lot Paving</a></li>
-            <li><a href="https://www.parkwaypaving.com/asphalt-resurfacing/" target="_blank" rel="noopener noreferrer">Asphalt Resurfacing</a></li>
-            <li><a href="https://www.parkwaypaving.com/asphalt-sealcoating/" target="_blank" rel="noopener noreferrer">Asphalt Sealcoating</a></li>
+            <li><a href="#residential">Residential Asphalt Paving</a></li>
+            <li><a href="#commercial">Commercial Asphalt Paving</a></li>
+            <li><a href="#sealcoating">Asphalt Sealcoating</a></li>
+            <li><a href="#resurfacing">Asphalt Resurfacing</a></li>
+            <li><a href="#driveway">Asphalt Driveway Paving</a></li>
+            <li><a href="#parking">Parking Lot Paving</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="pk-footer-bottom">
-        <p style="margin:0;">COPYRIGHT@2023</p>
-        <p style="margin:0;">
-          <a href="https://www.parkwaypaving.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of service</a>
-          –
-          <a href="https://www.parkwaypaving.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-        </p>
-      </div>
+      <p style="margin-top:20px;color:rgba(255,255,255,.65);">COPYRIGHT@2023</p>
     </div>
   </footer>
-
-  <div class="pk-sticky">
-    <a class="pk-btn pk-btn-ghost" href="tel:8625960642" style="color:#fff;border-color:rgba(255,255,255,.35)">Call Now</a>
-    <a class="pk-btn pk-btn-primary" href="#pk-quote">Free Quote</a>
-  </div>
-
-  <script>
-    (function(){
-      var root = document.getElementById('parkway-residential-page');
-      if(!root) return;
-
-      var qs = root.querySelectorAll('.pk-qa-q');
-
-      qs.forEach(function(btn, i){
-        var panel = btn.nextElementSibling;
-        var pid = 'pk-qa-panel-' + (i + 1);
-        panel.id = pid;
-        btn.setAttribute('aria-controls', pid);
-
-        btn.addEventListener('click', function(){
-          var open = btn.getAttribute('aria-expanded') === 'true';
-
-          qs.forEach(function(b){
-            if(b !== btn){
-              b.setAttribute('aria-expanded','false');
-              b.nextElementSibling.style.maxHeight = null;
-            }
-          });
-
-          if(open){
-            btn.setAttribute('aria-expanded','false');
-            panel.style.maxHeight = null;
-          } else {
-            btn.setAttribute('aria-expanded','true');
-            panel.style.maxHeight = panel.scrollHeight + 'px';
-          }
-        });
-      });
-
-      window.addEventListener('resize', function(){
-        root.querySelectorAll('.pk-qa-q[aria-expanded="true"]').forEach(function(b){
-          b.nextElementSibling.style.maxHeight = b.nextElementSibling.scrollHeight + 'px';
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
